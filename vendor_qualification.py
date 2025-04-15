@@ -110,6 +110,9 @@ def vendor_qualification(request: VendorRequest):
                 "average_similarity": round(combined_score, 4),
                 "rating": row.rating,
                 "category": row.main_category,
+                "product_url": row.product_url,
+                "seller": row.seller,
+                "full_pricing_page": row.full_pricing_page,
             })
 
     if not results:
